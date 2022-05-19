@@ -24,6 +24,6 @@ jobs:
 
       - name: Test with oryks code coverage
         id: oryks-code-coverage
-        - uses: twyle/oryks-code-coverage@v2.0.2
-          with:
+        uses: twyle/oryks-code-coverage@v2.0.2
+        with:
             myInput: world
