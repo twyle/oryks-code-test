@@ -22,8 +22,12 @@ jobs:
 
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi 
 
-      - name: Test with oryks code coverage
-        id: oryks-code-coverage
-        uses: twyle/oryks-code-coverage@v2.0.2
+      - name: oryks code coverage action
+        id: selftest
+        uses: twyle/oryks-code-coverage@v3.0.2
         with:
-            myInput: world
+          myInput: world
+
+    - name: action output
+      run: |
+        echo "${{ steps.selftest.outputs.myOutput }}
