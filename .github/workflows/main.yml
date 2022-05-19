@@ -24,7 +24,7 @@ jobs:
 
       - name: oryks code coverage action
         id: selftest
-        uses: twyle/oryks-code-coverage@v3.0.2
+        uses: twyle/oryks-code-coverage@v4.0.0
         with:
           myInput: world
 
