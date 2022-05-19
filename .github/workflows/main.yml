@@ -30,4 +30,4 @@ jobs:
 
     - name: action output
       run: |
-        echo "${{ steps.selftest.outputs.myOutput }}
+        echo "${{ steps.selftest.outputs.myOutput }}"
