@@ -24,10 +24,11 @@ jobs:
 
       - name: oryks code coverage action
         id: selftest
-        uses: twyle/oryks-code-coverage@v5.0.0
+        uses: lyleokoth/pytest-coverage-ytest@v1.0.0
         with:
-          myInput: world
+          codedirectory: src/
+          testdirectory: tests/
 
       - name: action output
         run: |
-          echo "${{ steps.selftest.outputs.myOutput }}"
+          echo "${{ steps.selftest.outputs.testcoverage }}"
